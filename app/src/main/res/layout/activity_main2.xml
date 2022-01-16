@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="@color/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Какой напиток желаете?"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonTea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:text="Tea"
+            android:checked="true"
+            android:onClick="choose_drink"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee"
+            android:padding="5dp"
+            android:onClick="choose_drink"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerTea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tea"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Coffee"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Что хотите добавить в ваш напиток?"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сахар" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMilk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Молоко" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лимон" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сделать заказ"
+        android:textSize="20sp"
+        android:onClick="order"/>
+</LinearLayout>

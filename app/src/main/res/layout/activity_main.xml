@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/kofe" />
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="COFFEEMAN"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_browm"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:ems="10"
+        android:hint="Введите ваше имя"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:onClick="start"
+        android:text="ORDER"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        />
+
+</LinearLayout>

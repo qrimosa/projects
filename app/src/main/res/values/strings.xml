@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="tea">
+        <item>Black</item>
+        <item>Green</item>
+        <item>Oolong</item>
+    </string-array>
+    <string-array name="Coffee">
+        <item>Latte</item>
+        <item>Espresso</item>
+        <item>Cappuccino</item>
+        <item>Americano</item>
+    </string-array>
+</resources>
